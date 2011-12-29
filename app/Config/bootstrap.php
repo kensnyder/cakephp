@@ -63,3 +63,9 @@ Cache::config('default', array('engine' => 'File'));
  * CakePlugin::load('DebugKit'); //Loads a single plugin named DebugKit
  *
  */
+
+App::build(array(
+	'View' => array(APP . '/View/Templates/'),
+));
+App::import('Vendor', 'ppr');
+CakePlugin::loadAll();
